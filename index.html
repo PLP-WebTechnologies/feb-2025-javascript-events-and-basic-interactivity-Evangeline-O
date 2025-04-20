@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Signup Form</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+    #formContainer {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Podcast Signup</h1>
+
+  <p>Sign up to receive exclusive updates and content from our podcast!</p>
+
+  <div id="formContainer">
+    <form id="signupForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <span id="nameError" class="error"></span>
+      <br><br>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <span id="emailError" class="error"></span>
+      <br><br>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <br>
+    <button id="toggleFormButton">Show/Hide Signup Form</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
